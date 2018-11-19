@@ -10,12 +10,12 @@
   max-width: 500px;
   margin: 0 auto;
   color: white;
+  text-align: center;
+  text-shadow: 1px 1px black;
 }
 
 .container p {
-  text-align: center;
   font-size: 30px;
-  text-shadow: 1px 1px black;
 }
 
 .flickity-page-dots {
