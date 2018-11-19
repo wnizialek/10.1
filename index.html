@@ -12,7 +12,7 @@
 
      </head>
      <body>
-            <div class="main-carousel">
+            <div id= "results" class="main-carousel">
                     <div id="carousel-cell1" style="background-image: url(https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)" class="carousel-cell">
                         <div class="container"><p>LOREM IPSUM</p></div>
                     </div>
@@ -29,12 +29,51 @@
                     <div id="carousel-cell5" style="background-image: url(https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)" class="carousel-cell">
                                 <div class="container"><p>LOREM IPSUM</p></div>
     
-                    </div>    
+                    </div>  
             </div>
             <script type="text/javascript" src="vendor/flickity.pkgd.min.js"></script>
             <script type="text/javascript" src="vendor/hash.js"></script>
+            <script type="text/javascript" src="vendor/mustache.js"></script>
             <script type="text/javascript" src="js/script.js"></script>
 
 
      </body>
+     <script id="slides-list" type="x-tmpl-mustache">
+            <div id="carousel-cell[i]" style="background-image: url( {{image}} ">
+                <div class="container"> 
+                    <h1> {{title}} </h1>
+                    {{{description}}}
+            </div>
+    </script>
+    
+    <script>
+         var slidesData = [
+             {
+                 image: "https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                 title: "TITLE1",
+                 description: "<p>Lorem Ipsum</p>"
+             },
+             {
+                 image: "https://images.pexels.com/photos/239520/pexels-photo-239520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                 title: "TITLE2",
+                 description: "<p>Lorem Ipsum</p>"
+             },
+             {
+                 image: "https://images.pexels.com/photos/128234/pexels-photo-128234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+                 title: "TITLE3",
+                 description: "<p>Lorem Ipsum</p>"
+             },
+             {
+                 image: "https://images.pexels.com/photos/163848/road-mountains-sunset-path-163848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+                 title: "TITLE4",
+                 description: "<p>Lorem Ipsum</p>"
+             },
+             {
+                 image: "https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+                 title: "TITLE5",
+                 description: "<p>Lorem Ipsum</p>"
+             }
+
+         ]
+     </script>
 </html>
