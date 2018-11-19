@@ -1,0 +1,21 @@
+.carousel-cell {
+    width: 100%; 
+    height: 50vh;
+    min-height: 250px;
+    margin-right: 10px;
+    background-size: cover;
+  }
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+    p {
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 1px 1px black;
+    }
+}
+.flickity-page-dots {
+    bottom: 0px;
+    display: none;
+  }
