@@ -6,3 +6,13 @@ var flkty = new Flickity( elem, {
   hash: true
 });
 
+var button = document.getElementById('reset');
+var scroll = document.getElementById('scroll');
+
+button.addEventListener('click', function(){
+    flkty.select(0);
+});
+
+flkty.on('scroll', function(progress){
+    scroll.style.width = Math.floor(progress * 100) + "%"
+});

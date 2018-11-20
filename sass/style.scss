@@ -19,3 +19,23 @@
     bottom: 0px;
     display: none;
   }
+
+.main-carousel {
+    position: relative;
+}
+button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    background-color: rgba(255, 255, 255, 0.158);
+}
+#scroll {
+    height: 20px;
+    background-color: grey;
+    width: 0%;
+    transition: 0.1s;
+}
