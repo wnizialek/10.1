@@ -12,9 +12,8 @@
 
      </head>
      <body>
-            <div id= "results" class="main-carousel">
-                  
-            </div>
+            <div id= "results" class="main-carousel"></div>
+            <div id="map"></div>
 
 
             <script id="slides-list" type="x-tmpl-mustache">
@@ -31,27 +30,33 @@
                      {
                          image: "https://images.pexels.com/photos/63324/california-road-highway-mountains-63324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                          title: "TITLE1",
-                         description: "<p>Lorem Ipsum</p>"
+                         description: "<p>Lorem Ipsum</p>",
+                         coords: {lat: -25.363, lng: 131.044}
+                    
                      },
                      {
                          image: "https://images.pexels.com/photos/239520/pexels-photo-239520.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                          title: "TITLE2",
-                         description: "<p>Lorem Ipsum</p>"
+                         description: "<p>Lorem Ipsum</p>",
+                         coords: {lat: -25.363, lng: 133.044}
                      },
                      {
                          image: "https://images.pexels.com/photos/128234/pexels-photo-128234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                          title: "TITLE3",
-                         description: "<p>Lorem Ipsum</p>"
+                         description: "<p>Lorem Ipsum</p>",
+                         coords: {lat: -25.363, lng: 135.044}
                      },
                      {
                          image: "https://images.pexels.com/photos/163848/road-mountains-sunset-path-163848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                          title: "TITLE4",
-                         description: "<p>Lorem Ipsum</p>"
+                         description: "<p>Lorem Ipsum</p>",
+                         coords: {lat: -25.363, lng: 137.044}
                      },
                      {
                          image: "https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
                          title: "TITLE5",
-                         description: "<p>Lorem Ipsum</p>"
+                         description: "<p>Lorem Ipsum</p>",
+                         coords: {lat: -25.363, lng: 139.044}
                      }
         
                  ]
@@ -62,6 +67,9 @@
             <script type="text/javascript" src="vendor/hash.js"></script>
             <script type="text/javascript" src="vendor/mustache.js"></script>
             <script type="text/javascript" src="js/script.js"></script>
+            <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArBAyyaWw-c6BmyrXxP57jJGhKWbJaDLA&callback=initMap">
+    </script>
 
 
      </body>

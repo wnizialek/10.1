@@ -13,4 +13,12 @@ var flkty = new Flickity( elem, {
   hash: true
 });
 
+window.initMap = function() {
+   
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: slidesData[0].coords});
 
+    for(var i = 0; i < slidesData.length; i++){ 
+        new google.maps.Marker({position: slidesData[i].coords, map: map});
+  }
+}
