@@ -23,14 +23,14 @@
   display: none;
 }
 
-.main-carousel {
+.main-container {
   position: relative;
 }
 
-button {
+.button {
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 40px;
+  right: 20px;
   text-shadow: 1px 1px black;
   color: white;
   font-size: 20px;

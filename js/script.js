@@ -6,7 +6,7 @@ var flkty = new Flickity( elem, {
   hash: true
 });
 
-var button = document.getElementById('reset');
+var button = document.getElementById('restart');
 var scroll = document.getElementById('scroll');
 
 button.addEventListener('click', function(){
